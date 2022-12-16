@@ -1,0 +1,44 @@
+---
+import data from '../../artists'
+import _ from 'lodash'
+import MainLayout from '../../layouts/MainLayout.astro';
+import ArtistWork from '../../components/ArtistWork.svelte';
+export function getStaticPaths() {
+  return [
+    {params: {slug: 'nicole-reiling'}},
+    {params: {slug: 'rayan-arnold'}},
+    {params: {slug: 'grey-anderson'}},
+    {params: {slug: 'nancy-costa'}},
+  ];
+}
+
+const { slug } = Astro.params;
+
+let artist = _.find(data, {slug: slug});
+---
+
+<MainLayout title={artist.name}>
+    <div class="max-w-6xl p-4 mx-auto text-gray-700">
+        <!-- <h1 class="text-3xl font-extralight">Founder:</h1> -->
+        <div class="min-h-[500px]">
+            <h1 class="text-6xl font-heading mb-4">
+                {artist.name}
+            </h1>
+            <p class="text-2xl font-extralight">
+                {artist.description}
+            </p>
+        </div>
+        <div class="h-20"/>
+
+        <div class="">
+            <h2 class="text-4xl font-heading mb-4">{artist.name+`'s Awesome Art.`}</h2>
+            <div class="flex flex-wrap gap-8">
+                {artist.art.map((work) => (
+                   <div class="max-w-sm">
+                    <img src={work} alt="" class="rounded">
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+</MainLayout>

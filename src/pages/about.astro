@@ -1,12 +1,15 @@
 ---
+import AllArtists from "../components/AllArtists.svelte";
 import MainLayout from "../layouts/MainLayout.astro";
 
 ---
 
 <MainLayout title="About ohalanʌ́ht">
-    <div class="max-w-5xl mx-auto p-4 min-h-screen">
-
+    <div class="max-w-6xl mx-auto p-4 min-h-screen">
+        <h1 class="text-6xl font-heading text-gray-700">Our Name</h1>
+        
         <div class="w-full flex justify-center">
+            
             <div class="flex flex-col gap-4">
                 <div class="min-h-[600px] flex items-center">
                     <p class="text-4xl font-extralight">
@@ -34,15 +37,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="w-full bg-slate-50">
-        <div class="max-w-5xl mx-auto p-4 min-h-[500px] flex items-center">
-            <div class="flex flex-col gap-4">
-                <h1 class="text-5xl">What we seek to create</h1>
-                <ul class="text-3xl font-extralight fancy-list flex flex-col gap-4">
-					<li class="">Member-owned collective</li>
-					<li class="">Provide artists space to elevate the next generation’s taste for multimedia</li>
-					<li class="">Photography, Comics, Film, 2D and 3D Animation</li>
-				</ul>
+        <div class="max-w-6xl mx-auto p-4">
+            <h1 class="text-5xl text-gray-700 font-heading mb-8">
+                Our Founders
+            </h1>
+            <div class=" flex items-center">
+                <AllArtists/>
             </div>
         </div>
+        
     </div>
 </MainLayout>

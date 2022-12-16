@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/footer.astro';
 import Header from '../components/header.astro';
+import CallToAction from '../components/CallToAction.svelte';
 
 export interface Props {
 	title: string;
@@ -23,6 +24,11 @@ const { title } = Astro.props;
 	<body class="bg-gray-100">
 		<Header/>
 		<slot/>
+
+		<div class="h-[200px]"/>
+		<div class="max-w-6xl mx-auto mb-8">
+			<CallToAction/>
+		</div>
 		<Footer/>
 	</body>
 </html>

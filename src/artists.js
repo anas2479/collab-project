@@ -36,7 +36,8 @@ export default [
         description: `
         Grey Anderson is a Minneapolis-based 2D animated filmmaker. Who is expected to graduate from the Minneapolis College of Art and Design in 2024 with a Bachelors of Fine Arts in animation, with a 2D focus. They are currently trying to grapple with ideas of transformation and consciousness. As they have continued to grow as an animated filmmaker, they are working to stretch their capabilities for movement and energy. Grey is experimenting with different lighting techniques in order to be able to completely change or enhance the feeling of a scene. They think that lighting, as in film, is one of the most powerful tools for atmosphere and meaning, and want to focus on this in their work.  They have received the Virginia M. Binger Animation Merit Scholarship, as well as the 2020 Robert photography scholarship and 3 honorary mentions in the scholastic art awards. And have had work at the WestonkArts Juried Art Exhibition and Minnesota State Fair. At MCAD, They have been on the dean’s list every semester that they have attended. `,
         art:[
-
+            "/artist/grey-1.png",
+            "/artist/grey-2.png",
         ]
     },
 
